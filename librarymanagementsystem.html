@@ -1,0 +1,46 @@
+
+mkdir LibraryManagement
+cd LibraryManagement
+git init
+
+
+echo "Library Management System" > library.txt
+
+
+git add library.txt
+git commit -m "Initial commit"
+
+
+echo "Book management feature added" >> library.txt
+git add library.txt
+git commit -m "Add book management feature"
+
+
+echo "Incorrect availability message" >> library.txt
+git add library.txt
+git commit -m "Add incorrect availability message"
+
+
+git log --oneline
+
+
+git reset --soft HEAD~1
+git status
+
+
+git add library.txt
+git commit -m "Add incorrect availability message"
+
+
+git reset --mixed HEAD~1
+git status
+
+
+git add library.txt
+git commit -m "Add incorrect availability message"
+
+
+git reset --hard HEAD~1
+
+git log --oneline
+git status
